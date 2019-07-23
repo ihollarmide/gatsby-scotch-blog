@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@import "~bulma/bulma.sass";
+
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.is-font-dosis {
+  font-family: "Dosis", sans-serif !important;
+}
+
+.main-body {
+  min-height: 96vh;
+}
+
+.padding-right {
+  &-small {
+    padding-right: 2rem;
+  }
+
+  &-big {
+    padding-right: 4rem;
+  }
+}
+
+.intro-text {
+  margin-bottom: 4rem !important;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+
+.box-content {
+  background-size: cover;
+  transition: all .2s;
+  box-shadow: none !important;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.html {
+  &Intro {
+    display: flex;
+    align-items: baseline;
+
+    &>*:first-child {
+      padding-right: .8rem;
+    }
+  }
+
+  &Details {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2rem;
+
+    &>*:first-child {
+      padding-right: .8rem;
+    }
+  }
+
+  &Blog {
+    line-height: 150%;
+
+    ol,
+    ul {
+      list-style: none;
+    }
+  }
+}
